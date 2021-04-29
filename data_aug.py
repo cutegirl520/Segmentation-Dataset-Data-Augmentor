@@ -7,3 +7,5 @@ import cv2
 from tqdm import tqdm
 from glob import glob
 from albumentations import CenterCrop, RandomRotate90, GridDistortion, HorizontalFlip, VerticalFlip
+
+def load_data(path):
