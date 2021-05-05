@@ -9,3 +9,5 @@ from glob import glob
 from albumentations import CenterCrop, RandomRotate90, GridDistortion, HorizontalFlip, VerticalFlip
 
 def load_data(path):
+    images = sorted(glob(os.path.join(path, "images/*")))
+    masks = sorted(glob(os.path.join(path, "masks/*")))
