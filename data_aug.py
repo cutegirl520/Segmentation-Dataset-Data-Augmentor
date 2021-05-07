@@ -11,3 +11,4 @@ from albumentations import CenterCrop, RandomRotate90, GridDistortion, Horizonta
 def load_data(path):
     images = sorted(glob(os.path.join(path, "images/*")))
     masks = sorted(glob(os.path.join(path, "masks/*")))
+    return images, masks
