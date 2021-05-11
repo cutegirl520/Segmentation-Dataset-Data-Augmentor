@@ -20,3 +20,5 @@ def create_dir(path):
 def augment_data(images, masks, save_path, augment=True):
     H = 256
     W = 256
+
+    for x, y in tqdm(zip(images, masks), total=len(images)):
