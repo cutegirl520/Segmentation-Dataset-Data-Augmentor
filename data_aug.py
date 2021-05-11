@@ -16,3 +16,7 @@ def load_data(path):
 def create_dir(path):
     if not os.path.exists(path):
         os.makedirs(path)
+
+def augment_data(images, masks, save_path, augment=True):
+    H = 256
+    W = 256
