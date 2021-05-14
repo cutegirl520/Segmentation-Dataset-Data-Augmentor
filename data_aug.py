@@ -22,3 +22,6 @@ def augment_data(images, masks, save_path, augment=True):
     W = 256
 
     for x, y in tqdm(zip(images, masks), total=len(images)):
+        name = x.split("/")[-1].split(".")
+        """ Extracting the name and extension of the image and the mask. """
+        image_name = name[0]
