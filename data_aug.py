@@ -26,3 +26,5 @@ def augment_data(images, masks, save_path, augment=True):
         """ Extracting the name and extension of the image and the mask. """
         image_name = name[0]
         image_extn = name[1]
+
+        name = y.split("/")[-1].split(".")
