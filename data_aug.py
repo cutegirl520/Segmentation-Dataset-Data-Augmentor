@@ -28,3 +28,7 @@ def augment_data(images, masks, save_path, augment=True):
         image_extn = name[1]
 
         name = y.split("/")[-1].split(".")
+        mask_name = name[0]
+        mask_extn = name[1]
+
+        """ Reading image and mask. """
