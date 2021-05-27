@@ -32,3 +32,4 @@ def augment_data(images, masks, save_path, augment=True):
         mask_extn = name[1]
 
         """ Reading image and mask. """
+        x = cv2.imread(x, cv2.IMREAD_COLOR)
