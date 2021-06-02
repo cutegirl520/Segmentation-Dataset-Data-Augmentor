@@ -44,3 +44,5 @@ def augment_data(images, masks, save_path, augment=True):
 
             aug = RandomRotate90(p=1.0)
             augmented = aug(image=x, mask=y)
+            x2 = augmented['image']
+            y2 = augmented['mask']
