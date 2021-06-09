@@ -46,3 +46,7 @@ def augment_data(images, masks, save_path, augment=True):
             augmented = aug(image=x, mask=y)
             x2 = augmented['image']
             y2 = augmented['mask']
+
+            aug = GridDistortion(p=1.0)
+            augmented = aug(image=x, mask=y)
+            x3 = augmented['image']
