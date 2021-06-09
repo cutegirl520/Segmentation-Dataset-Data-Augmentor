@@ -53,3 +53,4 @@ def augment_data(images, masks, save_path, augment=True):
             y3 = augmented['mask']
 
             aug = HorizontalFlip(p=1.0)
+            augmented = aug(image=x, mask=y)
