@@ -50,3 +50,6 @@ def augment_data(images, masks, save_path, augment=True):
             aug = GridDistortion(p=1.0)
             augmented = aug(image=x, mask=y)
             x3 = augmented['image']
+            y3 = augmented['mask']
+
+            aug = HorizontalFlip(p=1.0)
