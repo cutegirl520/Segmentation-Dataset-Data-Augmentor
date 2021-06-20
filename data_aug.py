@@ -66,3 +66,4 @@ def augment_data(images, masks, save_path, augment=True):
             save_masks =  [y, y1, y2, y3, y4, y5]
 
         else:
+            save_images = [x]
