@@ -72,3 +72,4 @@ def augment_data(images, masks, save_path, augment=True):
         """ Saving the image and mask. """
         idx = 0
         for i, m in zip(save_images, save_masks):
+            i = cv2.resize(i, (W, H))
