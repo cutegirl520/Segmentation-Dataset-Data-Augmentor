@@ -76,3 +76,5 @@ def augment_data(images, masks, save_path, augment=True):
             m = cv2.resize(m, (W, H))
 
             if len(images) == 1:
+                tmp_img_name = f"{image_name}.{image_extn}"
+                tmp_mask_name = f"{mask_name}.{mask_extn}"
