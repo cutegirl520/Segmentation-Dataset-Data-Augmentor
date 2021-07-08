@@ -80,3 +80,4 @@ def augment_data(images, masks, save_path, augment=True):
                 tmp_mask_name = f"{mask_name}.{mask_extn}"
             else:
                 tmp_img_name = f"{image_name}_{idx}.{image_extn}"
+                tmp_mask_name = f"{mask_name}_{idx}.{mask_extn}"
