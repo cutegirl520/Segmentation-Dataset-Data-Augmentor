@@ -78,3 +78,5 @@ def augment_data(images, masks, save_path, augment=True):
             if len(images) == 1:
                 tmp_img_name = f"{image_name}.{image_extn}"
                 tmp_mask_name = f"{mask_name}.{mask_extn}"
+            else:
+                tmp_img_name = f"{image_name}_{idx}.{image_extn}"
