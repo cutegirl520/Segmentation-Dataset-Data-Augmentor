@@ -81,3 +81,5 @@ def augment_data(images, masks, save_path, augment=True):
             else:
                 tmp_img_name = f"{image_name}_{idx}.{image_extn}"
                 tmp_mask_name = f"{mask_name}_{idx}.{mask_extn}"
+
+            image_path = os.path.join(save_path, "images", tmp_img_name)
