@@ -87,3 +87,5 @@ def augment_data(images, masks, save_path, augment=True):
 
             cv2.imwrite(image_path, i)
             cv2.imwrite(mask_path, m)
+
+            idx += 1
