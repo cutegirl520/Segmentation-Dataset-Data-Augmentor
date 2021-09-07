@@ -89,3 +89,5 @@ def augment_data(images, masks, save_path, augment=True):
             cv2.imwrite(mask_path, m)
 
             idx += 1
+
+if __name__ == "__main__":
