@@ -94,3 +94,7 @@ if __name__ == "__main__":
     """ Loading original images and masks. """
     path = "CVC-612/"
     images, masks = load_data(path)
+    print(f"Original Images: {len(images)} - Original Masks: {len(masks)}")
+
+    """ Creating folders. """
+    create_dir("new_data/images")
