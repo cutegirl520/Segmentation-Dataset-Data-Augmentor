@@ -91,3 +91,6 @@ def augment_data(images, masks, save_path, augment=True):
             idx += 1
 
 if __name__ == "__main__":
+    """ Loading original images and masks. """
+    path = "CVC-612/"
+    images, masks = load_data(path)
