@@ -98,3 +98,4 @@ if __name__ == "__main__":
 
     """ Creating folders. """
     create_dir("new_data/images")
+    create_dir("new_data/masks")
