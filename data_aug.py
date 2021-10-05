@@ -101,3 +101,4 @@ if __name__ == "__main__":
     create_dir("new_data/masks")
 
     """ Applying data augmentation. """
+    augment_data(images, masks, "new_data", augment=True)
