@@ -102,3 +102,6 @@ if __name__ == "__main__":
 
     """ Applying data augmentation. """
     augment_data(images, masks, "new_data", augment=True)
+
+    """ Loading augmented images and masks. """
+    images, masks = load_data("new_data/")
