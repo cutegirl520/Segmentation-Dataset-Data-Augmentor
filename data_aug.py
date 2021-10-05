@@ -105,3 +105,4 @@ if __name__ == "__main__":
 
     """ Loading augmented images and masks. """
     images, masks = load_data("new_data/")
+    print(f"Augmented Images: {len(images)} - Augmented Masks: {len(masks)}")
